@@ -1,0 +1,40 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\学校DEMO\PositionManage\bin\Debug\PositionManage.exe.config
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\学校DEMO\PositionManage\bin\Debug\PositionManage.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\学校DEMO\PositionManage\bin\Debug\PositionManage.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\学校DEMO\PositionManage\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\学校DEMO\PositionManage\obj\Debug\PositionManage.Form1.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\学校DEMO\PositionManage\obj\Debug\PositionManage.FormDefinePoint.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\学校DEMO\PositionManage\obj\Debug\PositionManage.Properties.Resources.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\学校DEMO\PositionManage\obj\Debug\PositionManage.UC.UCRefPoint.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\学校DEMO\PositionManage\obj\Debug\PositionManage.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\学校DEMO\PositionManage\obj\Debug\PositionManage.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\学校DEMO\PositionManage\obj\Debug\PositionManage.pdb
+D:\PositionManage\bin\Debug\PositionManage.exe.config
+D:\PositionManage\obj\Debug\PositionManage.exe
+D:\PositionManage\obj\Debug\PositionManage.pdb
+D:\PositionManage\bin\Debug\PositionManage.exe
+D:\PositionManage\bin\Debug\PositionManage.pdb
+D:\PositionManage\obj\Debug\PositionManage.Form1.resources
+D:\PositionManage\obj\Debug\PositionManage.Properties.Resources.resources
+D:\PositionManage\obj\Debug\PositionManage.UC.UCRefPoint.resources
+D:\PositionManage\obj\Debug\PositionManage.csproj.GenerateResource.Cache
+H:\小学\PositionManage\bin\Debug\PositionManage.exe.config
+H:\小学\PositionManage\obj\Debug\PositionManage.exe
+H:\小学\PositionManage\obj\Debug\PositionManage.pdb
+H:\小学\PositionManage\bin\Debug\PositionManage.exe
+H:\小学\PositionManage\bin\Debug\PositionManage.pdb
+H:\小学\PositionManage\obj\Debug\PositionManage.csprojResolveAssemblyReference.cache
+H:\小学\PositionManage\obj\Debug\PositionManage.Form1.resources
+H:\小学\PositionManage\obj\Debug\PositionManage.Properties.Resources.resources
+H:\小学\PositionManage\obj\Debug\PositionManage.UC.UCRefPoint.resources
+H:\小学\PositionManage\obj\Debug\PositionManage.csproj.GenerateResource.Cache
+D:\zwj\schoolmanager.z.1706241027\PositionManage\bin\Debug\PositionManage.exe.config
+D:\zwj\schoolmanager.z.1706241027\PositionManage\bin\Debug\PositionManage.exe
+D:\zwj\schoolmanager.z.1706241027\PositionManage\bin\Debug\PositionManage.pdb
+D:\zwj\schoolmanager.z.1706241027\PositionManage\obj\Debug\PositionManage.csprojResolveAssemblyReference.cache
+D:\zwj\schoolmanager.z.1706241027\PositionManage\obj\Debug\PositionManage.dingwei.resources
+D:\zwj\schoolmanager.z.1706241027\PositionManage\obj\Debug\PositionManage.Properties.Resources.resources
+D:\zwj\schoolmanager.z.1706241027\PositionManage\obj\Debug\PositionManage.UC.UCRefPoint.resources
+D:\zwj\schoolmanager.z.1706241027\PositionManage\obj\Debug\PositionManage.csproj.GenerateResource.Cache
+D:\zwj\schoolmanager.z.1706241027\PositionManage\obj\Debug\PositionManage.exe
+D:\zwj\schoolmanager.z.1706241027\PositionManage\obj\Debug\PositionManage.pdb

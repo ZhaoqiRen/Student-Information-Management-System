@@ -1,0 +1,141 @@
+;语言文件格式为: 名称|中文|英文，竖线分割，逗号与分号为注释，///为换行 空行自动忽略
+
+lang_appname|USR-TCP232-Setup |USR-TCP232-Setup 
+lang_MenuFile|文件(&F)|File(&F)
+lang_MenuSearch|搜索(&S)|Search(&S)
+lang_english|English(&L)|中文(&L)
+lang_MenuAbout|关于(&A)|About(&A)
+lang_search_help|搜索网络内的可控设备|Search the modules in LAN
+lang_opera_com_tip|通过串口操作|Setup Via COM
+lang_opera_lan_tip|通过网络操作|Setup Via LAN
+
+lang_MenuLoadIni|载入默认配置(&D)|Loat default(&D)
+lang_MenuSaveIni|保存配置文件(&V)|Save config(&V)
+lang_MenuExit|退出(&E)|Exit(&E)
+lang_MenuLanSearch|通过网络搜索(&L)|Search Via LAN(&L)
+lang_MenuComSearch|通过串口读取(&C)|Read Via COM(&C)
+
+;以下为按钮
+lang_Command_search|通过网络搜索|Search in LAN
+lang_Command_read|串口读取配置|Read via COM
+lang_Command_set|通过串口设置|Setup via COM
+lang_Command_default|载入默认|Loat default
+lang_Command_saveset|暂存参数|Save config
+lang_Command_netset|通过网络设置|Setup via NET
+lang_Command_reset|复位网内所有模块|Reset all moduels
+
+lang_notice|重要提示|Important Notice
+lang_Command_search_t|搜索网络中的设备，只要物理上在同一个路由器下就可以搜到，IP段可以不同。|Search the module in LAN,Hardware in LAN is ok, no need to IP address in same LAN.
+lang_Command_read_t|通过串口读取设备配置，注意需要将CFG接地。|Read via COM, notice need Connect CFG to GND.
+lang_Command_set_t|通过串口将设置写入模块，注意需要将CFG接地。|Setup via COM, this would write config to module, notice need Connect CFG to GND.
+lang_Command_default_t|载入默认设置到参数区，注意本操作不会对模块造成影响，需要用下面的串口设置或者网络设置才能生效。|Loat default settings to left frame, notice this oprate will not effect the module setting.///It will work only after you use the Setup via COM or Setup via NET.
+lang_Command_saveset_t|保存当前设置到计算机，下次打开软件将载入当前配置，方便批量设置模块时使用及备忘。///注意本操作不会对模块造成影响，只是将参数临时存到计算机上的配置文件中。|Save config to PC, next time open this prgram will load it as default.///Notice this oprate will not effect the module setting, just save settings in config file in PC.
+lang_Command_netset_t|通过网络将设置写入模块|Setup via NET, this will write config to module and reset module.
+lang_Command_reset_t|搜索和复位物理上在同一个局域网内的所有模块|Reset all moduels in phisical same LAN.
+Text_resettime_t|自动复位时间，失去焦点后自动保存，如果软件一直运行会定时复位局域网内的设备。|Auto reset time, this program will save when lost focus, if the software run all the time, it will reset modules at fixed time.
+lang_SearchChooseFirst|没有选中要操作的模块，请先搜索到设备，选中一个设备再操作|No selected device, please search and choose one device first.
+
+
+;以下为界面显示的内容
+lang_parameter|参数设置区|Parameters
+lang_workmode|模块工作方式：|module work mode:
+lang_moduleip|本模块IP地址：|module IP:
+lang_submask|子网掩码：|Subnet mask:
+lang_gateway|模块默认网关：|Default Gateway:
+lang_bandrate|串口波特率：|Baud Rate(bps):
+lang_datastop|校验/数据/停止：|Parity/data/stop:
+lang_modulePort|模块自身端口：|Module port:
+lang_destIP|连接目标IP：|Destination IP:
+lang_destPort|连接目标端口：|Destination Port:
+lang_doubleclick|双击搜索到的设备可以读取配置|Double click for read config.
+lang_autoread|搜索到设备后自动读取配置|Auto Read config when found module.
+lang_Textsets_tip|连接模块的计算机的硬件COM口的数字|The number of COM port for connect the module.
+
+;以下为问号提示
+lang_qparameter|参数区，要配置的参数写到这里，读取的参数显示到这里。|parameters need to be setup fill to here ///and read out parameters will be show here.
+lang_qworkmode|模块工作方式选择：///UDP server 是指不验证来源IP地址，///收到UDP数据包后将目标IP改为数据来源IP，///类似TCP server的功能。|module work mode: ///UDP server is like TCP server,when receive a UDP packet,///change target IP to sorce IP of the received UDP packet///Does not verify the source IP.
+lang_qmoduleip|本模块IP地址可在指定网段内任意分配，但网内不允许重复。|Module IP can fill any ip in LAN, ///just remeber do not repeat.
+lang_qsubmask|子网掩码：通常是255.255.255.0|Subnet mask, the default is 255.255.255.0
+lang_qgateway|模块默认网关，可以参看看你电脑的网关IP，///一般是192.168.0.1，192.168.1.1，192.168.0.254这类。|Default Gateway in your lan, ///you can look at pc's default getway, ///it should be like 192.168.0.1
+lang_qbandrate|请填写标准波特率值，我们确保每个///模块都工作OK的波特率是115200///(我们的测试波特率和默认波特率)，///最大23400，最小300。|Please fill standard bandrate number.
+lang_qdatastop|校验/数据/停止：|Parity bits / data bits / stop bits 
+lang_qmodulePort|模块工作于UDP或TCP Server模式时将监听此端口|When work at UDP mod or TCP Server mode,/// module will listen this port.
+lang_qdestIP|服务器的IP或者你要连接的计算机的IP，当工作在UDP模式时，///这里设置为255.255.255.255，可工作为UDP广播模式。///且在UDP广播模式时，需要将自身端口和目标端口设置为相同。|Destination IP is the Server Ip or the PC ip which you want to link.
+lang_qdestPort|服务器上的应用程序监听的端口号|The port be listen at server software.
+;右框问号
+lang_qbaseopra|下面两个按钮只是本软件在计算机上的操作，不会真正操作模块，不会对设备内的配置做任何改动。|The two buttons below just the operation of the software on the computer, not really operating modules, equipment configuration will not make any changes.
+lang_qcomopra|此框内的按钮是通过串口与设备进行通讯的，通过串口操作需要给模块供电，然后将CFG接地以进入配置状态，配置完成后需要将CFG悬空或者拉高以使模块回到工作状态，建议通过网络操作，则此框内的按钮不用理会。|Buttons in this box is for communicate through the serial port, it need the module power on, and connect CFG to GND to enter the configuration state. After complete configuration pulled up CFG pin to VCC or free it, to enable the module back to working condition, Suggest you operate through the network, no need to care CFG pin,then buttons in this box are ignored.
+lang_qnetopra|此框内的内容均是通过网络进行，需要将模块供电，并接入和电脑同一个局域网内或者直接连到计算机上，交叉直连网线均可，模块会自动切换。设置步骤：先点搜索，查找网络中的模块，选择模块，在左侧填写参数，再点网络设置按钮，设置完成后模块会重启，过一会再点搜索查看设置结果。如果计算机有双网卡(如笔记本的WIFI和有线)，建议先禁用一个，否则可能操作不正常。双击搜索到的模块可以读取配置！|The buttons in this box are for network config and need the module power supply, and access and computers within the same LAN or directly connected to the computer. Both accross or straight cable are ok, the module will automatically switch. Setup steps: the first search, find the network module, select the module, fill in the parameters at the left side, and then point the Network Settings button, the module will restart after the setup complete, a few moments later click the search button to view settings result. If the computer has a dual network card (such as a WIFI and RJ45 wired), it is recommended to disable one, or it may not operate properly. Double-click the search module can read the configuration!
+lang_qcportopra|通过串口方式配置模块，需要将CFG引脚接地，各模块的CFG引脚不同，请参考手册，-T和-D以及-S的引脚电平是TTL，连接计算机时需要注意进行TTL到RS232电平转换。|Configuration module through the serial port, need to connect the CFG pin to GND, connect module to computers need to pay attention of TTL or RS232 level, for example -T -D -S pin level is TTL version, you need to convert to RS232 version use max3232 etc.
+
+
+;操作过程提示
+lang_setcom_tip|设置时使用COM口(数字)：| Use com port for setup: 
+lang_operat_tip|操作中，请稍后……|Operating, please wait a moment…
+lang_comport_timeout|从串口接收数据超时，操作失败，请检查连接是否正确，模块是否已经进入配置模式，输入的COM口号是否正确，点击“通过串口操作”旁边的问号获取更多信息。|Time out when wait COM port answer, please check cable, CFG jumper, COM Port, Or click the question mark near operation Through the serial port for more information.
+lang_List1_tip|双击可读取模块的当前配置|Double click can can read current settings.
+lang_List1_AddItem|  模块设备IP  :  MAC地址  |  Module IP  :  MAC Address
+lang_log|操作日志|logs
+lang_help|///使用帮助：////// 1、我们的理念：简单 可靠 价格合理 /// 2、本软件支持串口和网络设置，但是你只需要选其一 /// 3、通过串口设置要将CFG接地，而通过网络不能接 ////// 技术支持：0531-55507297 www.usr.cn /// 企业QQ:800025565 邮箱：tec@usr.cn |Help:////// 1. Our philosophy: simple and reliable and reasonable price /// 2. You can use COM port or Ethernet to config the device, but you just need choose one /// 3. When use COM port you must connect CFG to GND, while use Ethernet you shoule not connect ////// Any question, Email to tec@usr.cn
+lang_help_tip|鼠标悬停有提示；点问号有说明；还不明白再打电话。| Mouseover for tips; click question mark for notes.
+lang_help_click|哇，哥们，这个你也点，这几个字也看不懂吗！|Really? you can't understand those two sentence. ^_^
+lang_infor_updated|该设备的当前配置信息已经更新到左侧的数据框！|Parameters has updated to left form.
+lang_sendsearch|发送搜索命令：|Send search command
+lang_basecommand|基础操作|Base CMD
+lang_gourl|检查更新|Check Update
+lang_gourl_tip|访问网站检查更新|Open web site for Check Update.
+
+;以下为程序内部提示
+lang_error_10048|协议所用端口正在使用中，请检查是不是开了两个设置软件，关掉再试。|Port in use, please check if you have open two software.
+lang_unkonwn_error|发生错误，错误号为|Somen error happen, error number is 
+lang_search_result|在网络中搜索到 |Search 
+lang_search_result2| 个设备| modules in LAN
+lang_sendReadCmd|发送读取命令|Send read command
+lang_sendSetupCmd|发送配置……|Send setup command …
+lang_canshu|配置参数：|Parameters:
+lang_comInuse|端口COM|COM port 
+lang_comInuse2|被占用，请关闭其他占用此端口的软件！| is in use, please close other software which use this COM port.
+lang_comInvalid|无效串口号，此计算机上不存在COM|Invalid COM port, this COM port 
+lang_comInvalid2|，请输入存在的COM口数字！| is not exit, please fill correct COM port number.
+
+lang_search_reset|搜索局域网内的设备，并复位它们……|Search modules in LAN and reset them …
+lang_search_lan|搜索局域网内的设备……|Search modules in LAN …
+lang_searchPortInuse|搜索和设置协议所用端口正在使用中，请检查是不是开了两个设置软件，关掉再试。|Search port is in use, please check if you have open an other setup software.
+lang_didnotSearch|没搜到模块么？是不是开着双网卡(如笔记本的WIFI和有线同时开着)，禁用不用的一个试试。|did not search module? Please check if you have open two ethernet card (WIFI and RJ45), disable one and try agin. 
+lang_didnotSearch2|注意要给模块供电，并把模块连到计算机所在的局域网内，或者通过网线直接连到电脑上(交叉直连网线均可，模块可以自动切换)，CFG引脚悬空或者接高，CFG一定不能接地。|Please notice you need to power on module and use network cable to connect it to your PC or in same LAN, both accross or straight cable are ok, leave CFG pin free, do not connect CFG to GND.
+lang_newSearchLater|稍后刷新重新搜索模块|You can search for new setting later.
+lang_setupSuccess|成功设置IP为|Sucess setup IP 
+lang_setupSuccess2|的模块的参数| on LAN.
+lang_receiveAck|收到正确返回，设置成功!|Receive ACK, setup success.
+lang_readfromCOMok|读取配置成功|Read progarm from COM ok.
+lang_readfromCOMerror|读取配置错误，校验和不正确！|Read error, check sum is not correct.
+lang_commError|通讯错误|Commulication error.
+lang_receiveUnkown|收到未知数据|Receive unkown data.
+lang_sumError|和校验错误，模块计算的校验值是 0x|Checksum error, the module require sum is 0x
+lang_comTryAgain|模块重新进入配置状态，请重新点击设置按钮|The module go into setup mode, Click setup VIA COM again.
+lang_configStr|配置数据串(不含包头和校验位)为：|The setting string (not include packet start and check sum) is:  
+
+;隐藏操作界面下的内容
+lang_expandFunctions|扩展功能区|Expand functions
+lang_comReadVer|通过串口读取版本|Read version from COM
+lang_qid|设备的独立ID，TCP Client模式时用于区分各设备,连接时发送或者放在数据前与数据一起发送。|ID function for TCP Client, send id to distinguish different device, send dada when connect or send before data.
+lang_idconnect|连接|Connect
+lang_iddata|数据|data
+lang_idtexttip|设备的ID，十进制表示，范围0~65535|device id in decimal, from 0 to 65535.
+lang_special|特殊功能|Specail functions
+
+;以下为about页面
+lang_abbout_title|关于本程序|About this
+lang_version|版本：|Version: 
+lang_confirm|确 认|OK
+lang_lblDescription|本程序由济南有人物联网技术有限公司设计提供，用于USR-TCP232系统产品设置，可以通过串口或者网络对系统产品进行配置，本软件使用免费。|This software is design by Jinan USR IOT Technology Co., Ltd. //////It is used for USR-TCP232-XX config.
+lang_lblContact|联系我们：www.usr.cn///0531-88826739  tec@usr.cn|Contact Us: http://en.usr.cn /// Email: tec@usr.cn
+lang_website|www.usr.cn/Page/download.html|http://en.usr.cn/download.html
+
+
+;以下未使用
+lang_auther|古欣|guxin 
+lang_Command_open|打 开|Open
+lang_CMD_open_tip|在浏览器中打开选中设备的配置网页|Open Web Server for config the module.
+lang_no_space|没空位置了，请至少关掉一个再试！|No more space to open it, please close one frame and try again.
+lang_receive_timeout|接收数据超时|Receive data timeout.

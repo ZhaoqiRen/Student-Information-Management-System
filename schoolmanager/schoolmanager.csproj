@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B57C082F-7B90-4FF6-8F9C-DBE382E48963}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>schoolmanager</RootNamespace>
+    <AssemblyName>schoolmanager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>schoolmanager.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ModuleAPI, Version=1.10.11.11, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ModuleAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UHFReader18CSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\UHFReader18CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonUtils.cs" />
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="BASAISFUCTION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BASAISFUCTION.Designer.cs">
+      <DependentUpon>BASAISFUCTION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_markEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_markManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReaderHandle.cs" />
+    <Compile Include="上课活动查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="上课活动查询.Designer.cs">
+      <DependentUpon>上课活动查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="到校时刻查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="到校时刻查询.Designer.cs">
+      <DependentUpon>到校时刻查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="增加学生信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="增加学生信息.Designer.cs">
+      <DependentUpon>增加学生信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="学生信息管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学生信息管理.designer.cs">
+      <DependentUpon>学生信息管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="操场活动.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="操场活动.Designer.cs">
+      <DependentUpon>操场活动.cs</DependentUpon>
+    </Compile>
+    <Compile Include="更换RFID卡.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="更换RFID卡.Designer.cs">
+      <DependentUpon>更换RFID卡.cs</DependentUpon>
+    </Compile>
+    <Compile Include="活动时刻查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="活动时刻查询.Designer.cs">
+      <DependentUpon>活动时刻查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员及教师登录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员及教师登录.Designer.cs">
+      <DependentUpon>管理员及教师登录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BASAISFUCTION.resx">
+      <DependentUpon>BASAISFUCTION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_markEdit.resx">
+      <DependentUpon>frm_markEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_markManage.resx">
+      <DependentUpon>frm_markManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="上课活动查询.resx">
+      <DependentUpon>上课活动查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="到校时刻查询.resx">
+      <DependentUpon>到校时刻查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="增加学生信息.resx">
+      <DependentUpon>增加学生信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="学生信息管理.resx">
+      <DependentUpon>学生信息管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="操场活动.resx">
+      <DependentUpon>操场活动.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="更换RFID卡.resx">
+      <DependentUpon>更换RFID卡.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="活动时刻查询.resx">
+      <DependentUpon>活动时刻查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员及教师登录.resx">
+      <DependentUpon>管理员及教师登录.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Audiomanager\Audiomanager.csproj">
+      <Project>{1e644bdd-7e36-4bfc-bf0b-e297972c7aee}</Project>
+      <Name>Audiomanager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kinectmanager\KinectPPT_byLSS\Kinectmanager.csproj">
+      <Project>{b4d85549-5650-4c3c-b824-274c50873dbd}</Project>
+      <Name>Kinectmanager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PositionManage\PositionManage.csproj">
+      <Project>{2720ce00-b23f-4d84-959e-60f0dc396b56}</Project>
+      <Name>PositionManage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\人.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\格式工厂主界面1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\红灯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\loginbackground\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蓝天小学平面图.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
